@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>javascript rasterization demo</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="utils.js"></script>
+        <script src="grid.js"></script>
+        <script defer src="algos.js"></script>
+        <script src="sidebar.js"></script>
+        
+
+        <style>
+            body, html
+            {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            canvas
+            {
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            #row-container
+            {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+            }
+            #sidebar
+            {
+                outline: 1px solid black;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="row-container">
+            <div id="grid"></div>
+            <div id="sidebar"></div>
+        </div>
+    </body>
+</html>
